@@ -1,6 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+	--font-sora: 'Sora', sans-serif;
+}
+
+.sora {
+	font-family: var(--font-sora);
+}
 
 .translate-z-0 {
 	transform: translateZ(0px);
