@@ -1,16 +1,14 @@
 <script lang="ts">
-	import { onNavigate } from '$app/navigation';
-
-	onNavigate((navigation) => {
-		//@ts-ignore
-		if (!document.startViewTransition) return;
-
-		return new Promise((resolve) => {
-			//@ts-ignore
-			document.startViewTransition(async () => {
-				resolve();
-				await navigation.complete;
-			});
-		});
-	});
+	import { fly } from 'svelte/transition';
+	export let pathname: string = '';
 </script>
+
+{#key pathname}
+	<div
+		in:fly={{ x: -10, duration: 500, delay: 500 }}
+		out:fly={{ x: 5, duration: 500 }}
+		class="h-full"
+	>
+		<slot />
+	</div>
+{/key}

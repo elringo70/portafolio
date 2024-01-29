@@ -1,14 +1,14 @@
 <div class="mx-auto xl:mx-0">
 	<a
 		href="/work"
-		class="relative w-[185px] h-[185px] flex justify-center items-center bg-circleStar bg-cover bg-center bg-no-repeat group"
+		class="relative w-[170px] h-[170px] flex justify-center items-center bg-circleStar bg-cover bg-center bg-no-repeat group"
 	>
 		<img
-			src="./rounded-text.png"
-			width="141px"
-			height="148px"
+			src="./rounded-text2.png"
+			width="160px"
+			height="160px"
 			alt=""
-			class="animate-spin-slow w-full h-full max-w-[141px] max-h-[148px]"
+			class="animate-spin-slow w-full h-full max-w-[160px] max-h-[160px]"
 		/>
 
 		<svg

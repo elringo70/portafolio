@@ -1,5 +1,5 @@
 <script>
-	import { Motion } from 'svelte-motion';
+	import Motion from 'svelte-motion/src/motion/MotionSSR.svelte';
 
 	const transitionVariants = {
 		initial: {
@@ -8,7 +8,7 @@
 		},
 		animate: {
 			x: '0%',
-			width: '0%'
+			width: '0% '
 		},
 		exit: {
 			x: ['0%', '100%'],
