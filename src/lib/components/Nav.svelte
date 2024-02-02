@@ -3,17 +3,17 @@
 	import Icon from '@iconify/svelte';
 
 	export const navData = [
-		{ name: 'home', path: '/', icon: 'mdi:home' },
-		{ name: 'about', path: '/about', icon: 'mdi:user' },
-		{ name: 'services', path: '/services', icon: 'heroicons:rectangle-group-16-solid' },
-		{ name: 'work', path: '/work', icon: 'material-symbols:work' },
+		{ name: 'inicio', path: '/', icon: 'mdi:home' },
+		{ name: 'nosotros', path: '/about', icon: 'mdi:user' },
+		{ name: 'servicio', path: '/services', icon: 'heroicons:rectangle-group-16-solid' },
+		{ name: 'trabajo', path: '/work', icon: 'material-symbols:work' },
 		{
-			name: 'testimonials',
+			name: 'testimonios',
 			path: '/testimonials',
 			icon: 'basil:chat-solid'
 		},
 		{
-			name: 'contact',
+			name: 'contacto',
 			path: '/contact',
 			icon: 'basil:envelope-solid'
 		}
@@ -24,7 +24,7 @@
 	class="flex flex-col items-center xl:justify-center gap-y-4 fixed h-max bottom-0 mt-auto xl:right-[2%] z-50 top-0 w-full xl:w-16 xl:max-w-md xl:h-screen"
 >
 	<div
-		class="flex w-full xl:flex-col items-center justify-between xl:justify-center gap-y-10 px-4 md:px-40 xl:px-0 h-[80px] xl:h-max py-8 bg-white/10 backdrop-blur-sm text-3xl xl:text-xl xl:rounded-full"
+		class="flex w-full xl:flex-col items-center justify-between xl:justify-center gap-y-10 px-[calc(1rem+1vh)] md:px-40 xl:px-0 h-[50px] xs:h-[80px] xl:h-max py-[calc(2rem+1vh)] bg-white/10 backdrop-blur-sm text-3xl xl:text-xl xl:rounded-full"
 	>
 		{#each navData as link}
 			<a
