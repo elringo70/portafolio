@@ -56,6 +56,7 @@
 	"types": "./dist/index.d.ts",
 	"type": "module",
 	"dependencies": {
+		"@splidejs/svelte-splide": "^0.2.9",
 		"@tsparticles/svelte": "^3.0.0",
 		"svelte-countup": "^0.2.6",
 		"swiper": "^11.0.5",
