@@ -1,4 +1,6 @@
 <script lang="ts">
+	import type { PageData } from './$types';
+
 	import '../app.css';
 	import Nav from '$lib/components/Nav.svelte';
 	import Header from '$lib/components/Header.svelte';
@@ -6,7 +8,7 @@
 
 	import Navigation from '$lib/components/Navigation.svelte';
 
-	export let data: any;
+	export let data: PageData;
 </script>
 
 <div class="page bg-site text-white bg-cover bg-no-repeat sora relative">
