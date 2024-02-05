@@ -29,6 +29,7 @@
 	"devDependencies": {
 		"@iconify/svelte": "^3.1.6",
 		"@sveltejs/adapter-auto": "^3.0.0",
+		"@sveltejs/adapter-static": "^3.0.1",
 		"@sveltejs/kit": "^2.0.0",
 		"@sveltejs/package": "^2.0.0",
 		"@sveltejs/vite-plugin-svelte": "^3.0.0",
@@ -59,7 +60,7 @@
 		"@splidejs/svelte-splide": "^0.2.9",
 		"@tsparticles/svelte": "^3.0.0",
 		"svelte-countup": "^0.2.6",
-		"swiper": "^11.0.5",
+		"sveltekit-adapter-html-like": "^0.3.2",
 		"tsparticles": "^3.1.0"
 	}
 }

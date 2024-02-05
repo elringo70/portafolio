@@ -1,7 +1,11 @@
-export const load = ({ url }) => {
-	const { pathname } = url;
+export const prerender = true;
+export const ssr = true;
+export const trailingSlash = 'ignore';
 
-	return {
-		pathname
-	};
+export const load = ({ url }) => {
+  const { pathname } = url;
+
+  return {
+    pathname
+  };
 };

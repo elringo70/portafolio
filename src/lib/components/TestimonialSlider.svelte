@@ -1,0 +1,99 @@
+<script lang="ts">
+	import { Splide, SplideSlide } from '@splidejs/svelte-splide';
+	import '@splidejs/svelte-splide/css';
+	import Icon from '@iconify/svelte';
+
+	const testimonialData = [
+		{
+			name: 'David Solis',
+			image: './t-avt-1.png',
+			position: 'Podólogo',
+			message:
+				'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id dolorem, rerum eveniet quasi animi nulla. Facilis ut odit placeat vero.'
+		},
+		{
+			name: 'Erika Toscano',
+			image: './t-avt-2.png',
+			position: 'Terapeuta',
+			message:
+				'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id dolorem, rerum eveniet quasi animi nulla. Facilis ut odit placeat vero.'
+		},
+		{
+			name: 'Luis Alvarez',
+			image: './t-avt-3.png',
+			position: 'Desarrollador',
+			message:
+				'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id dolorem, rerum eveniet quasi animi nulla. Facilis ut odit placeat vero.'
+		}
+	];
+
+	const options = {
+		gap: 10,
+		pagination: false
+	};
+</script>
+
+<Splide {options} aria-label="Trabajos" class="h-[400px]">
+	{#each testimonialData as data}
+		<SplideSlide>
+			<div class="flex flex-col items-center md:flex-row gap-x-8 h-full px-16">
+				<div
+					class="w-full max-w-[300px] flex flex-col xl:justify-center items-center relative mx-auto xl:mx-0"
+				>
+					<div class="flex flex-col justify-center text-center">
+						<div class="mb-2 mx-auto w-[80px] h-[80px] avatar-image">
+							<img class="w-full h-full" src={data.image} alt="" />
+						</div>
+						<div class="text-lg avatar-name">{data.name}</div>
+						<div class="text-[12px] uppercase font-extralight tracking-widest avatar-position">
+							{data.position}
+						</div>
+					</div>
+				</div>
+				<div
+					class="flex-1 flex flex-col justify-center before:w-[1px] xl:before:bg-white/20 xl:before:absolute xl:before:left-0 xl:before:h-[200px] relative xl:pl-20"
+				>
+					<div class="mb-4">
+						<Icon
+							icon="icomoon-free:quotes-left"
+							class="text-2xl md:text-4xl xl:text-6xl text-white/20 mx-auto md:mx-0"
+						/>
+					</div>
+					<div class="text-xs xl:text-lg text-center md:text-left message">{data.message}</div>
+				</div>
+			</div>
+		</SplideSlide>
+	{/each}
+</Splide>
+
+<style>
+	@media (min-height: 600px) {
+		.message {
+			@apply text-base;
+		}
+	}
+
+	@media (min-height: 750px) {
+		.message {
+			@apply text-lg;
+		}
+
+		.avatar-name {
+			@apply text-xl;
+		}
+	}
+
+	@media (min-height: 900px) {
+		.avatar-image {
+			@apply w-[120px] h-[120px];
+		}
+
+		.avatar-name {
+			@apply text-2xl;
+		}
+
+		.avatar-position {
+			@apply text-lg;
+		}
+	}
+</style>

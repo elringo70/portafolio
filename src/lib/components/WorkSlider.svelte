@@ -30,14 +30,14 @@
 	};
 </script>
 
-<Splide {options} aria-label="Trabajos" class="h-[280px] sm:h-[300px]">
+<Splide {options} aria-label="Trabajos" class="h-[280px] sm:h-[480px]">
 	{#each workData as data}
 		<SplideSlide>
 			<div class="grid grid-cols-2 grid-row-2 gap-4 cursor-pointer">
 				{#each data.images as image}
 					<div class="relative rounded-lg overflow-hidden flex items-center justify-center group">
 						<div class="flex items-center justify-center relative overflow-hidden group">
-							<img src={image.path} alt="" width="400px" height="250px" />
+							<img src={image.path} alt="" width="500px" height="300px" />
 							<div
 								class="absolute inset-0 bg-gradient-to-l from-transparent via-[#e838cc] to-[#4a22bd] opacity-0 group-hover:opacity-80 transition-all duration-700"
 							></div>
