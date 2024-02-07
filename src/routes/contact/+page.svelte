@@ -1,11 +1,52 @@
-<script>
+<script lang="ts">
 	import Motion from 'svelte-motion/src/motion/MotionSSR.svelte';
 	import Icon from '@iconify/svelte';
 
 	import Circles from '$lib/components/Circles.svelte';
+	import Modal from '$lib/components/Modal.svelte';
+	import MetaTag from '$lib/components/MetaTag.svelte';
 
 	import { fadeIn } from '$lib/utils/variants';
+	import { onMount } from 'svelte';
+
+	let form: HTMLFormElement;
+	let showModal: boolean;
+
+	const toggleModal = () => {
+		showModal = !showModal;
+	};
+
+	onMount(() => {
+		form.addEventListener('submit', handleSubmit);
+
+		async function handleSubmit(event: Event): Promise<void> {
+			event.preventDefault();
+
+			const formData = new FormData(this);
+
+			const response = await fetch(this.action, {
+				method: this.method,
+				body: formData,
+				headers: {
+					Accept: 'application/json'
+				}
+			});
+
+			if (response.ok) {
+				form.reset();
+				toggleModal();
+			}
+		}
+	});
 </script>
+
+<svelte:head>
+	<MetaTag
+		title="Agencia de desarrollo de software | Contactanos"
+		description="Contacta a nuestra empresa, cuentanos tu idea y la desarrollaremos a las necesidades del mismo."
+		canocical="https://www.lucaalsa.com"
+	/>
+</svelte:head>
 
 <div class="h-full bg-primary/30">
 	<div
@@ -18,27 +59,28 @@
 
 			<Motion variants={fadeIn('up', 0.4)} initial="hidden" animate="show" exit="hidden" let:motion>
 				<form
-					action=""
-					method="post"
 					class="flex-1 flex flex-col gap-4 w-full mx-auto z-30"
+					action="https://formspree.io/f/xrgnberv"
+					method="POST"
+					autocomplete="off"
+					bind:this={form}
 					use:motion
 				>
-					<div class="flex gap-x-6 w-full">
-						<input type="text" placeholder="nombre" class="input" />
-						<input type="email" placeholder="email" class="input" />
+					<div class="flex flex-col xs:flex-row gap-x-6 gap-y-4 xs:gap-y-0 w-full">
+						<input name="name" type="text" placeholder="nombre" class="input" required />
+						<input name="email" type="email" placeholder="email" class="input" required />
 					</div>
-					<input type="email" placeholder="asunto" class="input" />
-					<input type="email" placeholder="email" class="input" />
-					<textarea placeholder="mensaje" class="textarea"></textarea>
+					<input name="subject" type="text" placeholder="asunto" class="input" required />
+					<textarea name="message" placeholder="mensaje" class="textarea" required></textarea>
 					<button
-						class="btn rounded-full border border-white/50 max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group"
+						class="btn rounded-full border border-white/50 max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group relative mx-auto xs:mx-0"
 						type="submit"
 						><span
 							class="group-hover:-translate-y-[120%] group-hover:opacity-0 transition-all duration-500"
 							>Contactar
 						</span><Icon
 							icon="mingcute:arrow-right-up-line"
-							class="-translate-y-[120%] opacity-0 group-hover:flex group-hover:-translate-y-0 group-hover:opacity-100 transition-all duration-300 absolute text-[22px]"
+							class="-translate-y-[120%] opacity-0 group-hover:flex group-hover:-translate-y-0 group-hover:opacity-100 transition-all duration-300 absolute text-[22px] h-full w-full"
 						/></button
 					>
 				</form>
@@ -46,21 +88,5 @@
 		</div>
 	</div>
 	<Circles />
+	<Modal {showModal} />
 </div>
-
-<style>
-	.btn,
-	.input {
-		@apply h-[50px];
-	}
-	.input {
-		@apply w-full h-[48px] rounded-lg pl-6 capitalize;
-	}
-	.input,
-	.textarea {
-		@apply bg-transparent outline-none focus:ring-1 focus:ring-accent border border-white/20 placeholder:text-white/30 placeholder:font-light;
-	}
-	.textarea {
-		@apply w-full h-[120px] p-6 capitalize rounded-lg resize-none;
-	}
-</style>

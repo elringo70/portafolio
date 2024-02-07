@@ -4,9 +4,18 @@
 	import TestimonialSlider from '$lib/components/TestimonialSlider.svelte';
 	import Bulb from '$lib/components/Bulb.svelte';
 	import Circles from '$lib/components/Circles.svelte';
+	import MetaTag from '$lib/components/MetaTag.svelte';
 
 	import { fadeIn } from '$lib/utils/variants';
 </script>
+
+<svelte:head>
+	<MetaTag
+		title="Agencia de desarrollo de software | Lo que nuestros clientes opinan"
+		description="Comentarios de nuestros clientes sobre el servicio prestado o brindado hacia ellos."
+		canocical="https://www.lucaalsa.com"
+	/>
+</svelte:head>
 
 <div
 	class="h-full bg-primary/30 pt-32 flex flex-col items-center justify-center text-center testimonial-container"

@@ -4,6 +4,7 @@
 
 	import Avatar from '$lib/components/Avatar.svelte';
 	import Circles from '$lib/components/Circles.svelte';
+	import MetaTag from '$lib/components/MetaTag.svelte';
 
 	import { fadeIn } from '$lib/utils/variants';
 
@@ -68,6 +69,14 @@
 		}
 	];
 </script>
+
+<svelte:head>
+	<MetaTag
+		title="Agencia de desarrollo de software | Nosotros"
+		description="Utilizamos las tecnologías mas actuales para poder ofrecer la mejor experiencia en el Desarrollo Web, Base de Datos y Multiplataforma. Tecnologías como Svelte, MongoDB, NextJS, NodeJS entre otros."
+		canocical="https://www.lucaalsa.com"
+	/>
+</svelte:head>
 
 <div class="h-full bg-primary/30 py-[calc(6rem+2vh)] text-center xl:text-left full-container">
 	<Circles />

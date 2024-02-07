@@ -4,9 +4,18 @@
 	import WorkSlider from '$lib/components/WorkSlider.svelte';
 	import Bulb from '$lib/components/Bulb.svelte';
 	import Circles from '$lib/components/Circles.svelte';
+	import MetaTag from '$lib/components/MetaTag.svelte';
 
 	import { fadeIn } from '$lib/utils/variants';
 </script>
+
+<svelte:head>
+	<MetaTag
+		title="Agencia de desarrollo de software | Trabajo que hemos realizado"
+		description="Te mostramos algunos de los trabajos que hemos realizado y las experiencias que nuestros clientes han habldo sobre nuestro servicio."
+		canocical="https://www.lucaalsa.com"
+	/>
+</svelte:head>
 
 <div class="h-full bg-primary/30 py-28 flex items-center">
 	<Circles />

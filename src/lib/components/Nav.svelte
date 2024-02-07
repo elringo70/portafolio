@@ -5,7 +5,7 @@
 	export const navData = [
 		{ name: 'inicio', path: '/', icon: 'mdi:home' },
 		{ name: 'nosotros', path: '/about', icon: 'mdi:user' },
-		{ name: 'servicio', path: '/services', icon: 'heroicons:rectangle-group-16-solid' },
+		{ name: 'servicios', path: '/services', icon: 'heroicons:rectangle-group-16-solid' },
 		{ name: 'trabajo', path: '/work', icon: 'material-symbols:work' },
 		{
 			name: 'testimonios',

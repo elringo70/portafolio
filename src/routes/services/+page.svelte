@@ -4,9 +4,18 @@
 	import ServiceSlider from '$lib/components/ServiceSlider.svelte';
 	import Bulb from '$lib/components/Bulb.svelte';
 	import Circles from '$lib/components/Circles.svelte';
+	import MetaTag from '$lib/components/MetaTag.svelte';
 
 	import { fadeIn } from '$lib/utils/variants';
 </script>
+
+<svelte:head>
+	<MetaTag
+		title="Agencia de desarrollo de software | Servicios que ofrecemos"
+		description="Nos especializamos en el desarrollo de aplicaciones, ya sea Web y multiplataforma como iOS y Android utilizando la tecnología Flutter."
+		canocical="https://www.lucaalsa.com"
+	/>
+</svelte:head>
 
 <div class="h-full bg-primary/30 py-28 flex items-center">
 	<Circles />

@@ -35,7 +35,11 @@
 			/>
 		</svg>
 	</a>
-	<a href="#" class="hover:text-accent transition-all duration-300">
+	<a
+		href="https://www.linkedin.com/in/luis-carlos-alvarez-samaniego-733250117"
+		target="_blank"
+		class="hover:text-accent transition-all duration-300"
+	>
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
 			width="1em"

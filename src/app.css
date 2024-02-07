@@ -48,4 +48,18 @@
 	p {
 		@apply leading-[1.8] text-white/60 font-light;
 	}
+	.btn,
+	.input {
+		@apply h-[50px];
+	}
+	.input {
+		@apply w-full h-[48px] rounded-lg pl-6;
+	}
+	.input,
+	.textarea {
+		@apply bg-transparent outline-none focus:ring-1 focus:ring-accent border border-white/20 placeholder:text-white/30 placeholder:font-light;
+	}
+	.textarea {
+		@apply w-full h-[120px] p-6 capitalize rounded-lg resize-none;
+	}
 }

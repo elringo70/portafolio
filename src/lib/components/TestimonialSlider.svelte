@@ -12,11 +12,11 @@
 				'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id dolorem, rerum eveniet quasi animi nulla. Facilis ut odit placeat vero.'
 		},
 		{
-			name: 'Erika Toscano',
+			name: 'Ericka Toscano',
 			image: './t-avt-2.png',
 			position: 'Terapeuta',
 			message:
-				'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id dolorem, rerum eveniet quasi animi nulla. Facilis ut odit placeat vero.'
+				'Excelente servicio... pedí una página para vender mis productos terapeuticos y la tuvo inmediatamente y en tiempo. Funciona perfectamente y es muy facil de usar'
 		},
 		{
 			name: 'Luis Alvarez',
@@ -59,7 +59,9 @@
 							class="text-2xl md:text-4xl xl:text-6xl text-white/20 mx-auto md:mx-0"
 						/>
 					</div>
-					<div class="text-xs xl:text-lg text-center md:text-left message">{data.message}</div>
+					<div class="text-xs xl:text-lg text-center md:text-left message text-balance">
+						{data.message}
+					</div>
 				</div>
 			</div>
 		</SplideSlide>

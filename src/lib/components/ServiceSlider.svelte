@@ -8,19 +8,19 @@
 			icon: 'mdi:code',
 			title: 'Desarrollo web',
 			description:
-				"Desarrollo web si solo necesitas que tu aplicación funcione en algún navegador. Esto incluye siempre desarrollo e modo responsivo para cualquier pantalla respentando siempre el 'Mobile first'."
+				"Desarrollo web para que tu aplicación funcione en navegadores. Incluye siempre, desarrollo en modo responsivo para cualquier pantalla respetando el 'Mobile First'."
 		},
 		{
 			icon: 'teenyicons:mobile-outline',
 			title: 'Multiplataforma',
 			description:
-				'Desarrollamos en multiplataforma por si necesitas que el acceso a tu aplicación sea, además de en un nagevador Web, también en dispositivos Android y iOS así como en navegador Web.'
+				'Desarrollamos en multiplataforma cuando se requiera que el acceso a tu aplicación sea, no solo en un navegador Web, sino también en dispositivos Android y iOS.'
 		},
 		{
 			icon: 'mdi:api',
 			title: 'Api',
 			description:
-				'Para comunicarnos con el backend y que la información sea guardada y acceder en un tiempo posterior, se utiliza el RestFull API y así el FrontEnd pueda comunicarse con el BackEnd.'
+				'Creación de RestFull API para almacenamiento y consulta de datos, permitiendo que el FrontEnd pueda comunicarse con el BackEnd al acceder en un tiempo posterior.'
 		}
 	];
 

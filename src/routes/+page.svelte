@@ -5,7 +5,16 @@
 	import ProjectsBtn from '$lib/components/ProjectsBtn.svelte';
 	import Avatar from '$lib/components/Avatar.svelte';
 	import ParticlesContainer from '$lib/components/ParticlesContainer.svelte';
+	import MetaTag from '$lib/components/MetaTag.svelte';
 </script>
+
+<svelte:head>
+	<MetaTag
+		title="Agencia de desarrollo de software | Aplicaciones Web, iOS y Android"
+		description="LUCAALSA es una empresa que se dedica al desarrollo de software Web y multiplataforma iOS y Android. Desarrollomas tu aplicacion para las plataformas de usuario mas utilizadas."
+		canocical="https://www.lucaalsa.com"
+	/>
+</svelte:head>
 
 <div class="bg-primary/60 h-full">
 	<div class="w-full h-full bg-gradient-to-r from-primary/10 via-black/30 to-black/10">
