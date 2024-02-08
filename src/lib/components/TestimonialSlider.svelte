@@ -16,7 +16,7 @@
 			image: './t-avt-2.png',
 			position: 'Terapeuta',
 			message:
-				'Excelente servicio... pedí una página para vender mis productos terapeuticos y la tuvo inmediatamente y en tiempo. Funciona perfectamente y es muy facil de usar'
+				'Excelente servicio... pedí una página para vender mis productos terapéuticos y la tuvo inmediatamente y en tiempo. Funciona perfectamente y es muy fácil de usar'
 		},
 		{
 			name: 'Luis Alvarez',

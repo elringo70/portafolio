@@ -5,6 +5,7 @@
 	import Circles from '$lib/components/Circles.svelte';
 	import Modal from '$lib/components/Modal.svelte';
 	import MetaTag from '$lib/components/MetaTag.svelte';
+	import WaButton from '$lib/components/WAButton.svelte';
 
 	import { fadeIn } from '$lib/utils/variants';
 	import { onMount } from 'svelte';
@@ -54,7 +55,7 @@
 	>
 		<div class="flex flex-col w-full max-w-[700px]">
 			<Motion variants={fadeIn('up', 0.2)} initial="hidden" animate="show" exit="hidden" let:motion>
-				<h2 class="text-4xl text-center mb-4" use:motion>Contactame</h2>
+				<h2 class="text-4xl text-center mb-4" use:motion>Contáctame</h2>
 			</Motion>
 
 			<Motion variants={fadeIn('up', 0.4)} initial="hidden" animate="show" exit="hidden" let:motion>
@@ -90,3 +91,4 @@
 	<Circles />
 	<Modal {showModal} />
 </div>
+<WaButton />

@@ -53,7 +53,7 @@
 			title: 'Experiencia',
 			info: [
 				{
-					title: 'Web Developer (Anuglar) - Renato Ramos (Freelancer)',
+					title: 'Web Developer (Angular) - Renato Ramos (Freelancer)',
 					stage: '2023 - 2024'
 				}
 			]
@@ -113,10 +113,10 @@
 					use:motion
 					class="text-balance max-w-[500px] mx-auto xl:mx-0 mb-4 xl:mb-12 px-2 xl:px-0 text-xs"
 				>
-					Nos especializamos en crear un el proyecto a tu medida y con las herramientas necesarias
-					par que puedas crecer en el momento adecuado ajustandanos a las necesidades de cada
-					cliente. Cada proyecto se diseña de manera única para que nuestros clientes puedan
-					aprovechar se idea al máximo.
+					Nos especializamos en crear proyectos a tu medida y con las herramientas necesarias, para
+					que puedas crecer en el momento adecuado, ajustándanos a las necesidades de cada cliente.
+					Cada proyecto se diseña de manera única para que nuestros clientes puedan aprovechar su
+					idea al máximo.
 				</p>
 			</Motion>
 			<div class="hidden md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-8">
@@ -170,7 +170,7 @@
 							on:click={() => {
 								index = dataIndex;
 							}}
-							class={`${index === dataIndex ? 'text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300 after:z-[40] ' : ''}cursor-pointer capitalize xl:text-lg text-xs relative after:w-8 after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:left-0`}
+							class={`${index === dataIndex ? 'text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300' : 'after:bg-white'} cursor-pointer capitalize xl:text-lg text-xs relative after:w-8 after:h-[2px] after:absolute after:-bottom-1 after:left-0`}
 						>
 							{data.title}
 						</button>

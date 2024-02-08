@@ -5,7 +5,6 @@
 	import Nav from '$lib/components/Nav.svelte';
 	import Header from '$lib/components/Header.svelte';
 	import TopLeftImage from '$lib/components/TopLeftImage.svelte';
-
 	import Navigation from '$lib/components/Navigation.svelte';
 
 	export let data: PageData;

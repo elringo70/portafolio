@@ -29,7 +29,7 @@
 					exit="hidden"
 					let:motion
 				>
-					<h2 class="text-3xl xl:mt-8" use:motion>Servicios <span class="text-accent">.</span></h2>
+					<h2 class="text-3xl xl:mt-8" use:motion>Servicios<span class="text-accent">.</span></h2>
 				</Motion>
 				<Motion
 					variants={fadeIn('right', 0.6)}
