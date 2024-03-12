@@ -9,7 +9,7 @@
 			image: './t-avt-1.png',
 			position: 'Podólogo',
 			message:
-				'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id dolorem, rerum eveniet quasi animi nulla. Facilis ut odit placeat vero.'
+				'Mi negocio de podología necesitaba una página de internet para que me encuentren en Google, sepan mis horarios y encuentren nuestras sucursales. Aquí nos ayudaron perfectamente.'
 		},
 		{
 			name: 'Ericka Toscano',
@@ -19,11 +19,11 @@
 				'Excelente servicio... pedí una página para vender mis productos terapéuticos y la tuvo inmediatamente y en tiempo. Funciona perfectamente y es muy fácil de usar'
 		},
 		{
-			name: 'Luis Alvarez',
+			name: 'Jessica Yadira',
 			image: './t-avt-3.png',
-			position: 'Desarrollador',
+			position: 'Licenciada',
 			message:
-				'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id dolorem, rerum eveniet quasi animi nulla. Facilis ut odit placeat vero.'
+				'Para el control y administración de mi trabajo, necesitába una aplicación para llevar un mejor control de estadísticas. La empresa LUCAALSA me ayudó a implementar una solución a la medida.'
 		}
 	];
 

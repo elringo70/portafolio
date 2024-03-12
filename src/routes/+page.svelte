@@ -73,7 +73,7 @@
 
 		<ParticlesContainer />
 		<div
-			class="w-4/5 h-full max-w-[737px] max-h-[678px] absolute -bottom-32 lg:bottom-0 lg:right-[8%]"
+			class="w-full h-full max-w-[737px] max-h-[678px] absolute -bottom-32 lg:bottom-0 lg:right-[8%]"
 		>
 			<Motion
 				variants={fadeIn('up', 0.1)}
