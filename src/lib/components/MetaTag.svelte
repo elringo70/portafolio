@@ -1,7 +1,7 @@
 <script lang="ts">
 	export let title: string;
 	export let description: string;
-	export let canocical: string;
+	export let canocical: string = 'https://www.codeverselab.com';
 	export let ogImage: undefined | string = undefined;
 	export let ogUrl: undefined | string = undefined;
 </script>

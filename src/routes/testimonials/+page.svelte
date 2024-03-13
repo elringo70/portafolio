@@ -13,7 +13,6 @@
 	<MetaTag
 		title="Agencia de desarrollo de software | Lo que nuestros clientes opinan"
 		description="Comentarios de nuestros clientes sobre el servicio prestado o brindado hacia ellos."
-		canocical="https://www.lucaalsa.com"
 	/>
 </svelte:head>
 

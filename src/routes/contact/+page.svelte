@@ -45,7 +45,6 @@
 	<MetaTag
 		title="Agencia de desarrollo de software | Contactanos"
 		description="Contacta a nuestra empresa, cuentanos tu idea y la desarrollaremos a las necesidades del mismo."
-		canocical="https://www.lucaalsa.com"
 	/>
 </svelte:head>
 

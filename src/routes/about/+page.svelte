@@ -74,7 +74,6 @@
 	<MetaTag
 		title="Agencia de desarrollo de software | Nosotros"
 		description="Utilizamos las tecnologías mas actuales para poder ofrecer la mejor experiencia en el Desarrollo Web, Base de Datos y Multiplataforma. Tecnologías como Svelte, MongoDB, NextJS, NodeJS entre otros."
-		canocical="https://www.lucaalsa.com"
 	/>
 </svelte:head>
 

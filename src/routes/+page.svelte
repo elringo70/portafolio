@@ -12,7 +12,6 @@
 	<MetaTag
 		title="Agencia de desarrollo de software | Aplicaciones Web, iOS y Android"
 		description="LUCAALSA es una empresa que se dedica al desarrollo de software Web y multiplataforma iOS y Android. Desarrollomas tu aplicacion para las plataformas de usuario mas utilizadas."
-		canocical="https://www.lucaalsa.com"
 	/>
 </svelte:head>
 

@@ -13,7 +13,6 @@
 	<MetaTag
 		title="Agencia de desarrollo de software | Servicios que ofrecemos"
 		description="Nos especializamos en el desarrollo de aplicaciones, ya sea Web y multiplataforma como iOS y Android utilizando la tecnología Flutter."
-		canocical="https://www.lucaalsa.com"
 	/>
 </svelte:head>
 

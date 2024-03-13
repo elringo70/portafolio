@@ -1,9 +1,5 @@
-<script>
-	import Icon from '@iconify/svelte';
-</script>
-
 <a
-	href="https://api.whatsapp.com/send/?phone=5218113730969"
+	href="https://api.whatsapp.com/send/?phone=5218131937942"
 	class="absolute right-[2%] top-[2%] lg:top-auto lg:bottom-28 xl:bottom-16 cursor-pointer z-[50] icon"
 >
 	<svg
