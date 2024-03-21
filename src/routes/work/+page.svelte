@@ -53,7 +53,7 @@
 				exit="hidden"
 				let:motion
 			>
-				<div class="w-full xl:max-w-[65%]" use:motion>
+				<div class="w-full xl:max-w-[65%] mx-auto" use:motion>
 					<WorkSlider />
 				</div>
 			</Motion>
