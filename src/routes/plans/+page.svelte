@@ -17,16 +17,14 @@
 	/>
 </svelte:head>
 
-<div class="bg-primary/60 h-full">
-	<div class="w-full h-full absolute right-0 bottom-0">
+<div class="h-full bg-primary/30 flex items-center">
+	<div class="container mx-auto">
 		<div
-			class="bg-explosion xl:bg-cover xl:bg-right xl:bg-no-repeat w-full h-full absolute mix-blend-color-dodge translate-z-0"
+			class="bg-none xl:bg-explosion xl:bg-cover xl:bg-right xl:bg-no-repeat w-full h-full absolute mix-blend-color-dodge translate-z-0"
 		></div>
 		<Bulb />
-		<div class="h-full grid place-items-center">
-			<div class="w-full xl:max-w-[65%] mx-auto">
-				<PlansSlider />
-			</div>
+		<div class="w-full">
+			<PlansSlider />
 		</div>
 	</div>
 </div>
