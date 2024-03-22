@@ -85,7 +85,7 @@
 	{#each plansData as plan}
 		<SplideSlide>
 			<div
-				class="min-w-56 w-72 min-h-[400px] bg-transparent backdrop-blur-md border border-gray-600 rounded-md p-5 shadow-md hover:shadow-xl transition-all mx-auto"
+				class="min-w-56 w-72 min-h-[400px] xs:bg-transparent backdrop-blur-md bg-[rgba(65,47,123,0.15)] hover:bg-[rgba(89,65,169,0.15)] border border-gray-600 rounded-md p-5 shadow-md hover:shadow-xl transition-all mx-auto"
 			>
 				<div class="text-accent text-xl text-center pb-4 font-medium">{plan.plan}</div>
 				<div class="flex items-center gap-x-2 pb-1">

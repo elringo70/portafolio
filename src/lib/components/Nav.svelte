@@ -12,6 +12,7 @@
 			path: '/testimonials',
 			icon: 'basil:chat-solid'
 		},
+		{ name: 'planes', path: '/plans', icon: 'basil:apps-solid' },
 		{
 			name: 'contacto',
 			path: '/contact',

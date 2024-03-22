@@ -1,6 +1,5 @@
 <script lang="ts">
 	import Motion from 'svelte-motion/src/motion/MotionSSR.svelte';
-	import Icon from '@iconify/svelte';
 
 	import MetaTag from '$lib/components/MetaTag.svelte';
 	import WaButton from '$lib/components/WAButton.svelte';
@@ -23,8 +22,11 @@
 			class="bg-none xl:bg-explosion xl:bg-cover xl:bg-right xl:bg-no-repeat w-full h-full absolute mix-blend-color-dodge translate-z-0"
 		></div>
 		<Bulb />
-		<div class="w-full">
-			<PlansSlider />
-		</div>
+		<Motion variants={fadeIn('up', 0.3)} initial="hidden" animate="show" exit="hidden" let:motion>
+			<div class="w-full" use:motion>
+				<PlansSlider />
+				<div class="py-5">* Precios en pesos mexicanos(MXN)</div>
+			</div>
+		</Motion>
 	</div>
 </div>
