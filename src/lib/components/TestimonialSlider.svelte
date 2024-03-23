@@ -6,21 +6,21 @@
 	const testimonialData = [
 		{
 			name: 'David Solis',
-			image: './t-avt-1.png',
+			image: './t-avt-1.webp',
 			position: 'Podólogo',
 			message:
 				'Mi negocio de podología necesitaba una página de internet para que me encuentren en Google, sepan mis horarios y encuentren nuestras sucursales. Aquí nos ayudaron perfectamente.'
 		},
 		{
 			name: 'Ericka Toscano',
-			image: './t-avt-2.png',
+			image: './t-avt-2.webp',
 			position: 'Terapeuta',
 			message:
 				'Excelente servicio... pedí una página para vender mis productos terapéuticos y la tuvo inmediatamente y en tiempo. Funciona perfectamente y es muy fácil de usar'
 		},
 		{
 			name: 'Jessica Yadira',
-			image: './t-avt-3.png',
+			image: './t-avt-3.webp',
 			position: 'Licenciada',
 			message:
 				'Para el control y administración de mi trabajo, necesitába una aplicación para llevar un mejor control de estadísticas. La empresa LUCAALSA me ayudó a implementar una solución a la medida.'

@@ -7,19 +7,19 @@
 		{
 			project: 'Terapie',
 			images: [
-				{ path: './thumb1.jpg' },
-				{ path: './thumb2.jpg' },
-				{ path: './thumb3.jpg' },
-				{ path: './thumb4.jpg' }
+				{ path: './thumb1.webp' },
+				{ path: './thumb2.webp' },
+				{ path: './thumb3.webp' },
+				{ path: './thumb4.webp' }
 			]
 		},
 		{
 			project: 'Fucoidan',
 			images: [
-				{ path: './thumb1.jpg' },
-				{ path: './thumb2.jpg' },
-				{ path: './thumb3.jpg' },
-				{ path: './thumb4.jpg' }
+				{ path: './thumb1.webp' },
+				{ path: './thumb2.webp' },
+				{ path: './thumb3.webp' },
+				{ path: './thumb4.webp' }
 			]
 		}
 	];

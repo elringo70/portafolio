@@ -4,7 +4,7 @@
 		class="relative w-[170px] h-[170px] flex justify-center items-center bg-circleStar bg-cover bg-center bg-no-repeat group"
 	>
 		<img
-			src="./rounded-text2.png"
+			src="./rounded-text2.webp"
 			width="160px"
 			height="160px"
 			alt=""
